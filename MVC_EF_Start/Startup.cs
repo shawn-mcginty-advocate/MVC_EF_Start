@@ -21,7 +21,7 @@ namespace MVC_EF_Start
     public void ConfigureServices(IServiceCollection services)
     {
       // Setup EF connection
-      services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:IEXTrading:ConnectionString"]));
+      services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:CourseEnrollment:ConnectionString"]));
 
       // added from MVC template
       services.AddMvc();
